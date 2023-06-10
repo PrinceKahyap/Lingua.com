@@ -1,5 +1,126 @@
-/* ----------------Hero-style---------------------*/
+/* ----------------Header-style---------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 100000;
+}
+.header .top-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 60px;
+}
+.header .top-header .top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header .top-header .top-container .top-ph p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+.header .top-header .top-container .top-ph p span {
+  margin-left: 5px;
+}
+.header .top-header .top-container .top-right {
+  display: flex;
+  gap: 100px;
+}
+.header .top-header .top-container .top-right .top-lang {
+  display: flex;
+  gap: 20px;
+}
+.header .top-header .top-container .top-right .top-lang p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+.header .top-header .top-container .top-right .top-lang ul {
+  position: relative;
+  margin-left: 5px;
+}
+.header .top-header .top-container .top-right .top-lang ul li {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.header .top-header .top-container .top-right .top-lang ul li i {
+  margin-left: 3px;
+}
+.header .top-header .top-container .top-right .top-follow {
+  display: flex;
+  gap: 20px;
+}
+.header .top-header .top-container .top-right .top-follow p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+.header .top-header .top-container .top-right .top-follow ul {
+  display: flex;
+  gap: 10px;
+}
+.header .top-header .top-container .top-right .top-follow ul li {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.header .navbar .logo a {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2e21df;
+}
+.header .navbar .nav-menu {
+  display: flex;
+  gap: 20px;
+}
+.header .navbar .nav-menu a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.header .navbar .nav-menu a:hover {
+  color: #000;
+}
+.header .navbar .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header .navbar .nav-right .nav-search i {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.header .navbar .nav-right .nav-user {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f1f1;
+}
+.header .navbar .nav-right .nav-user i {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* ----------------/Header-style---------------------*/
+/* ----------------Hero-style---------------------*/
 .hero {
   background: url(/dist/img/index_background.jpg);
   background-position: center;
@@ -31,13 +152,48 @@
   border: none;
   cursor: pointer;
 }
+.hero .hero-container .h-btn:hover {
+  box-shadow: 0px 10px 43px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* ----------------/Hero-style---------------------*/
+/* ----------------Flag-style---------------------*/
+.flag {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+}
+.flag .carousel {
+  position: relative;
+}
+.flag .carousel .card {
+  width: 100%;
+  height: 100%;
+}
+.flag .carousel .card .flag-name h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------/Flag-style---------------------*/
 /* ----------------Popular-style---------------------*/
 .Popular {
   width: 100%;
   height: auto;
-  padding: 50px 0;
+  padding-top: 100px;
+  position: relative;
+}
+.Popular::before {
+  position: absolute;
+  content: "";
+  top: 380px;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background: #f8f8f8;
 }
 .Popular .popular-title {
   display: flex;
@@ -55,15 +211,220 @@
   padding-top: 50px;
 }
 .Popular .popular-container .popular-items {
-  background: #f8f8f8;
   position: relative;
 }
 .Popular .popular-container .popular-items .popular-content {
-  padding: 20px;
+  padding: 20px 30px;
   background: #fff;
+}
+.Popular .popular-container .popular-items .popular-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.Popular .popular-container .popular-items .popular-content p:nth-child(2) {
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.Popular .popular-container .popular-items .popular-content p {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
+}
+.Popular .popular-container .popular-items ul {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Popular .popular-container .popular-items ul li {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.Popular .popular-container .popular-items ul li span {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+.Popular .popular-container .popular-items ul .btn {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 16px;
+  color: #fff;
+  font-size: 1.4rem;
+  background: #2e21df;
 }
 
 /* ----------------/Popular-style---------------------*/
+/* ----------------Tutor-style---------------------*/
+.tutor {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #f8f8f8;
+}
+.tutor::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 600px;
+  background: url(/dist/img/instructors_background.png);
+  background-position: center;
+  background-size: cover;
+}
+.tutor .tutor-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.tutor .tutor-title h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.tutor .tutor-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+}
+.tutor .tutor-container .tuttor-item .tutor-img {
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0px 4px 21px -3px rgba(0, 0, 0, 0.1);
+}
+.tutor .tutor-container .tuttor-item .tutor-img img {
+  border-radius: 50%;
+}
+.tutor .tutor-container .tuttor-item .tutor-content {
+  padding-top: 30px;
+}
+.tutor .tutor-container .tuttor-item .tutor-content .tutor-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tutor .tutor-container .tuttor-item .tutor-content .tutor-info h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.tutor .tutor-container .tuttor-item .tutor-content .tutor-info h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.tutor .tutor-container .tuttor-item .tutor-content .tutor-info p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+.tutor .tutor-container .tuttor-item .tutor-content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.tutor .tutor-container .tuttor-item .tutor-content ul li {
+  font-size: 1.4rem;
+  color: #2e21df;
+}
+
+/* ----------------/Tutor-style---------------------*/
+/* ----------------Register-style---------------------*/
+.register {
+  width: 100%;
+  height: auto;
+  background: #f8f8f8;
+  padding: 100px 0;
+}
+.register .register-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+}
+.register .register-container .register-left form {
+  background: white;
+  padding: 40px;
+}
+.register .register-container .register-left form h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.register .register-container .register-left form .input-50 {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.register .register-container .register-left form .input-50 input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 15px 0;
+  outline: none;
+}
+.register .register-container .register-left form .r-btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background: #2e21df;
+  cursor: pointer;
+}
+.register .register-container .register-left form .r-btn:hover {
+  box-shadow: 0px 10px 43px 8px rgba(0, 0, 0, 0.1);
+}
+.register .register-container .register-right {
+  align-self: center;
+}
+.register .register-container .register-right .register-title h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.register .register-container .register-right .register-title p {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 30px;
+}
+.register .register-container .register-right ul {
+  display: flex;
+  gap: 40px;
+}
+.register .register-container .register-right ul li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #000;
+}
+.register .register-container .register-right ul li span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+}
+
+/* ----------------/Register-style---------------------*/
 /* ----------------Events-style---------------------*/
 .Events {
   width: 100%;
@@ -85,6 +446,32 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px;
   padding-top: 50px;
+}
+.Events .event-container .event-items .event-img {
+  position: relative;
+}
+.Events .event-container .event-items .event-img .event-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+}
+.Events .event-container .event-items .event-img .event-overlay p:nth-child(1) {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000;
+}
+.Events .event-container .event-items .event-img .event-overlay p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
 }
 .Events .event-container .event-items .event-content {
   display: flex;

@@ -1,3 +1,130 @@
+/* ----------------Header-style---------------------*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffffff;
+    z-index: 100000;
+    .top-header{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        height: 60px;
+        .top-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            .top-ph{
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: rgba(0,0,0,0.5);
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .top-right{
+                display: flex;
+                gap: 100px;
+                .top-lang{
+                    display: flex;
+                    gap: 20px;
+                    p{
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        color: rgba(0,0,0,0.5);
+                    }
+                    ul{
+                        position: relative;
+                        margin-left: 5px;
+                        li{
+                            font-weight: 600;
+                            color: rgba(0,0,0,0.5);
+                            font-size: 1.2rem;
+                            cursor: pointer;
+                            i{
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+                .top-follow{
+                    display: flex;
+                    gap: 20px;
+                    p{
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        color: rgba(0,0,0,0.5);
+                        letter-spacing: 1px;
+                    }
+                    ul{
+                        display: flex;
+                        gap: 10px;
+                        li{
+                            font-size: 1.2rem;
+                            color: rgba(0,0,0,0.5);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        .logo a{
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #2e21df;
+        }
+        .nav-menu{
+            display: flex;
+            gap: 20px;
+            a{
+                font-size: 1.4rem;
+                font-weight: 600;
+                color: rgba(0,0,0,0.5);
+                cursor: pointer;
+                &:hover{
+                    color: #000;
+                }
+            }
+            
+        }
+        .nav-right{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            .nav-search{
+                i{
+                    font-size: 1.6rem;
+                    color: rgba(0,0,0,0.5);
+                    cursor: pointer;
+                }
+            }
+            .nav-user{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #f1f1f1;
+                i{
+                    font-size: 1.4rem;
+                    color: rgba(0,0,0,0.5);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+/* ----------------/Header-style---------------------*/
+
 /* ----------------Hero-style---------------------*/
 .hero {
     background: url(/dist/img/index_background.jpg);
@@ -30,17 +157,55 @@
             letter-spacing: 1px;
             border: none;
             cursor: pointer;
+            &:hover{
+                box-shadow: 0px 10px 43px 8px rgba(0,0,0,0.1);
+            }
         }
     }
 }
 
 /* ----------------/Hero-style---------------------*/
 
+/* ----------------Flag-style---------------------*/
+.flag{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    .carousel{
+        position: relative;
+        .card{
+            width: 100%;
+            height: 100%;
+            .flag-name{
+                h3{
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    text-align: center;
+                    padding-top: 20px;
+                    color: rgba(0,0,0,0.5);
+                }
+            }
+        }
+    }
+}
+/* ----------------/Flag-style---------------------*/
+
 /* ----------------Popular-style---------------------*/
 .Popular {
     width: 100%;
     height: auto;
-    padding: 50px 0;
+    padding-top: 100px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 380px;
+        bottom: 0;
+        width: 100%;
+        height: 250px;
+        background: #f8f8f8;
+
+    }
 
     .popular-title {
         display: flex;
@@ -60,18 +225,230 @@
         padding-top: 50px;
 
         .popular-items {
-            background: #f8f8f8;
             position: relative;
-
+        
             .popular-content {
-                padding: 20px;
+                padding: 20px 30px ;
                 background: #fff;
+                h2{
+                    font-size: 2rem;
+                    font-weight: 600;
+                    padding-bottom: 5px;
+                }
+                p:nth-child(2){
+                    font-size: 1.4rem;
+                    padding-bottom: 20px;
+                    color: rgba(0,0,0,0.5);
+                }
+                p{
+                    font-size: 1.4rem;
+                    color: rgba(0,0,0,0.5);
+                    padding-bottom: 20px;
+                }
+            }
+            ul{
+                width: 100%;
+                border-top: 1px solid rgba(0,0,0,0.1);
+                padding-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    font-size: 1.4rem;
+                    color: rgba(0,0,0,0.5);
+                    span{
+                        font-size: 1.4rem;
+                        margin-right: 10px;
+                    }
+                }
+                .btn{
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 5px 16px;
+                    color: #fff;
+                    font-size: 1.4rem;
+                    background: #2e21df;
+                }
             }
         }
     }
 }
 
 /* ----------------/Popular-style---------------------*/
+
+/* ----------------Tutor-style---------------------*/
+.tutor{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #f8f8f8;
+    &::before{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 100%;
+        height: 600px;
+        background: url(/dist/img/instructors_background.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .tutor-title{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 120px;
+        h2{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+    }
+    .tutor-container{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 100px;
+
+        .tuttor-item{
+            .tutor-img{
+                width: 150px;
+                margin: auto;
+                height: 150px;
+                border: 10px solid #fff;
+                border-radius: 50%;
+                box-shadow: 0px 4px 21px -3px rgba(0,0,0,0.1);
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .tutor-content{
+                padding-top: 30px;
+                .tutor-info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    h3{
+                        font-size: 2rem;
+                        font-weight:500;
+                        padding-bottom: 5px;
+                    }
+                    h4{
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        padding-bottom: 10px;
+                        color: rgba(0,0,0,0.5);
+                    }
+                    p{
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        color: rgba(0,0,0,0.5);
+                    }
+                }
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    padding-top: 20px;
+                    li{
+                        font-size: 1.4rem;
+                        color: #2e21df;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ----------------/Tutor-style---------------------*/
+
+/* ----------------Register-style---------------------*/
+.register{
+    width: 100%;
+    height: auto;
+    background: #f8f8f8;
+    padding: 100px 0;
+    .register-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 100px;
+        .register-left{
+            form{
+                background: #ffffffff;
+                padding: 40px;
+                h3{
+                    font-size: 3rem;
+                    font-weight: 600;
+                    padding-bottom: 20px;
+                }
+                .input-50{
+                    display: flex;
+                    gap: 20px;
+                    padding-bottom: 20px;
+                    input{
+                        border: none;
+                        border-bottom: 1px solid rgba(0,0,0,0.5);
+                        width: 100%;
+                        padding: 15px 0;
+                        outline: none;
+                    }
+                }
+                .r-btn{
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    color: #fff;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    background: #2e21df;
+                    cursor: pointer;
+                    &:hover{
+                        box-shadow: 0px 10px 43px 8px rgba(0,0,0,0.1);
+                    }
+                }
+            }
+        }
+        .register-right{
+            align-self: center;
+            .register-title{
+                h3{
+                    font-size: 3rem;
+                    font-weight: 600;
+                    padding-bottom: 15px;
+                }
+                p{
+                    font-size: 1.4rem;
+                    color: rgba(0,0,0,0.5);
+                    padding-bottom: 30px;
+                }
+            }
+            ul{
+                display: flex;
+                gap: 40px;
+                li{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 5px;
+                    font-size: 4rem;
+                    font-weight: 600;
+                    color: #000;
+                    span{
+                        color: rgba(0,0,0,0.5);
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ----------------/Register-style---------------------*/
 
 /* ----------------Events-style---------------------*/
 .Events{
@@ -94,6 +471,32 @@
         grid-gap: 25px;
         padding-top: 50px;
         .event-items{
+            .event-img{
+                position: relative;
+                .event-overlay{
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    width: 80px;
+                    height: 80px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 0;
+                    p:nth-child(1){
+                        font-size: 3rem;
+                        font-weight: 600;
+                        color: #000;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        color: rgba(0,0,0,0.5);
+                    }
+                }
+            }
             .event-content{
                 display: flex;
                 justify-content: space-between;
