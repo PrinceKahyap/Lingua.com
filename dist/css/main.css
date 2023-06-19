@@ -234,6 +234,84 @@ img {
 }
 
 /* _________________/Hero-section____________________*/
+/* _________________popular-section____________________*/
+.popular {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+.popular .popular-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px;
+}
+.popular .popular-title h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.popular .popular-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  position: relative;
+}
+.popular .popular-boxs {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.popular .popular-boxs::before {
+  position: absolute;
+  content: "";
+  background: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  padding-bottom: 100px;
+}
+.popular .popular-boxs .popular-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.popular .popular-boxs .popular-content .popular-items {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  background: white;
+}
+.popular .popular-boxs .popular-content .popular-items .popular-img {
+  display: none;
+}
+.popular .popular-boxs .popular-content .popular-items h3 {
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+.popular .popular-boxs .popular-content .popular-items span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+  color: rgba(0, 0, 0, 0.45);
+}
+.popular .popular-boxs .popular-content .popular-items p {
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.45);
+}
+.popular .popular-boxs .popular-content .popular-items .popular-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* _________________/popular-section____________________*/
 /* _________________Responsive-section____________________*/
 @media (max-width: 992px) {
   .header .navbarBox .navbar .nav-menu {
@@ -332,6 +410,34 @@ img {
     margin: 6px;
     background: rgba(0, 0, 0, 0.8);
   }
+  .popular {
+    position: relative;
+  }
+  .popular .popular-title {
+    background: #f8f8f8;
+    padding: 50px 30px;
+  }
+  .popular .popular-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .popular .popular-container .popular-image {
+    display: none;
+  }
+  .popular .popular-boxs {
+    position: relative;
+  }
+  .popular .popular-boxs .popular-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .popular .popular-boxs .popular-content .popular-items {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: white;
+  }
+  .popular .popular-boxs .popular-content .popular-items .popular-img {
+    display: block;
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 768px) {
   .header .topBoxs {
@@ -362,6 +468,26 @@ img {
   }
   .hero .hero-container a {
     font-size: 1.2rem;
+  }
+  .popular {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+  }
+  .popular .popular-title {
+    background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+  }
+  .popular .popular-title h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .popular .popular-content {
+    padding: 10px;
   }
 }
 @media (max-width: 568px) {
