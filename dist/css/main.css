@@ -41,6 +41,7 @@ img {
   left: 0;
   width: 100%;
   height: auto;
+  z-index: 10000;
 }
 .header .topBoxs {
   width: 100%;
@@ -317,7 +318,8 @@ img {
 .event {
   width: 100%;
   height: auto;
-  padding: 50px 0;
+  padding: 100px 0;
+  padding-bottom: 100px;
 }
 .event .event-title {
   display: flex;
@@ -333,6 +335,58 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+  height: 100%;
+}
+.event .event-container .event-items {
+  height: 100%;
+}
+.event .event-container .event-items .event-img {
+  position: relative;
+}
+.event .event-container .event-items .event-img .event-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 75px;
+  height: 75px;
+  background: #fff;
+}
+.event .event-container .event-items .event-img .event-overlay span {
+  font-size: 3.5rem;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+.event .event-container .event-items .event-img .event-overlay p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.45);
+}
+.event .event-container .event-items .event-content {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: solid 1px #ebebeb;
+  border-right: solid 1px #ebebeb;
+  border-bottom: solid 1px #ebebeb;
+}
+.event .event-container .event-items .event-content .eventLeft p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.event .event-container .event-items .event-content .eventRight p {
+  font-size: 1.2rem;
+  padding: 6px 16px;
+  color: white;
+  background: #2e21df;
 }
 
 /* _________________/Event-section____________________*/
@@ -398,6 +452,54 @@ img {
 }
 .blog .blog-container .blogRight .blog-img {
   height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.blog .blog-container .blogRight .blog-img .blog-overlay {
+  position: absolute;
+  top: 70%;
+  width: 90%;
+  height: 100%;
+  background: #fff;
+  padding: 30px 40px;
+  transition: 0.3s ease;
+}
+.blog .blog-container .blogRight .blog-img .blog-overlay h3 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.45);
+  padding-bottom: 5px;
+}
+.blog .blog-container .blogRight .blog-img .blog-overlay h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+.blog .blog-container .blogRight .blog-img .blog-overlay p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.45);
+  padding-bottom: 20px;
+}
+.blog .blog-container .blogRight .blog-img .blog-overlay button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 200px;
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  color: #2e21df;
+  cursor: pointer;
+}
+.blog .blog-container .blogRight .blog-img .blog-overlay button:hover img {
+  transform: translateX(5px);
+}
+.blog .blog-container .blogRight .blog-img .blog-overlay button img {
+  transition: 0.3s ease;
+  width: 12px;
+}
+.blog .blog-container .blogRight .blog-img:hover .blog-overlay {
+  top: 0;
 }
 
 /* _________________/Blog-section____________________*/
@@ -533,6 +635,9 @@ footer .footer-bottom {
     display: block;
     padding-bottom: 20px;
   }
+  .event .event-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .blog .blog-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -594,6 +699,16 @@ footer .footer-bottom {
   .popular .popular-content {
     padding: 10px;
   }
+  .event .event-title h2 {
+    font-size: 2.5rem;
+  }
+  .event .event-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 10px;
+  }
+  .blog .blog-container .blogLeft .blog-title h2 {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 568px) {
   .header .navbarBox .navbar {
@@ -626,6 +741,9 @@ footer .footer-bottom {
   }
   .blog .blog-container .blogLeft .blog-gallery {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .blog .blog-container .blogRight .blog-img .blog-overlay h2 {
+    font-size: 2.5rem;
   }
 }
 /* _________________/Responsive-section____________________*//*# sourceMappingURL=main.css.map */
