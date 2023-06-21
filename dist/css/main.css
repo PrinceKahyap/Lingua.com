@@ -314,6 +314,163 @@ img {
 }
 
 /* _________________/popular-section____________________*/
+/* _________________Tutor-section____________________*/
+.tutor {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  background: #f8f8f8;
+  position: relative;
+}
+.tutor .tutor-bg {
+  position: absolute;
+  background: url(/dist/image/instructors_background.png);
+  width: 100%;
+  height: 560px;
+  bottom: 0;
+}
+.tutor .tutor-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px;
+}
+.tutor .tutor-title h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.tutor .tutor-container {
+  position: relative;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+.tutor .tutor-container .tutor-items .tutor-img {
+  width: 180px;
+  margin: auto;
+  height: 180px;
+  border: 15px solid #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.tutor .tutor-container .tutor-items .tutor-img img {
+  border-radius: 50%;
+}
+.tutor .tutor-container .tutor-items h3 {
+  padding-top: 20px;
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+.tutor .tutor-container .tutor-items span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.45);
+  padding-bottom: 20px;
+}
+.tutor .tutor-container .tutor-items p {
+  padding-top: 20px;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.45);
+}
+.tutor .tutor-container .tutor-items ul {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.tutor .tutor-container .tutor-items ul i {
+  color: #2e21df;
+  font-size: 1.4rem;
+}
+
+/* _________________/Tutor-section____________________*/
+/* _________________Course-section____________________*/
+.course {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  background: #f8f8f8;
+}
+.course .course-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+}
+.course .course-container .courseLeft form {
+  background: white;
+  padding: 40px;
+}
+.course .course-container .courseLeft form h3 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+.course .course-container .courseLeft form .input-50 {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.course .course-container .courseLeft form .input-50 input {
+  width: 100%;
+  border: none;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: #252525;
+  outline: none;
+  font-size: 1.4rem;
+}
+.course .course-container .courseLeft form a {
+  width: 100%;
+  height: 50px;
+  background: #2e21df;
+}
+.course .course-container .courseLeft form button {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  border: none;
+  background: #2e21df;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.course .course-container .courseRight {
+  align-self: center;
+}
+.course .course-container .courseRight .course-title h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.course .course-container .courseRight .course-title p {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.course .course-container .courseRight .course-time {
+  padding-top: 30px;
+}
+.course .course-container .courseRight .course-time ul {
+  display: flex;
+  gap: 50px;
+}
+.course .course-container .courseRight .course-time ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.course .course-container .courseRight .course-time ul li span {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+/* _________________/Course-section____________________*/
 /* _________________Event-section____________________*/
 .event {
   width: 100%;
@@ -740,6 +897,26 @@ footer .footer-bottom .footBoxs .footRight ul p {
   .popular .popular-boxs .popular-content .popular-items .popular-img {
     display: block;
     padding-bottom: 20px;
+  }
+  .tutor .tutor-bg {
+    position: absolute;
+    background: url(/dist/image/instructors_background.png);
+    width: 100%;
+    height: 560px;
+    bottom: 0;
+  }
+  .tutor .tutor-container {
+    position: relative;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+  }
+  .course .course-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
   }
   .event .event-container {
     grid-template-columns: repeat(1, 1fr);
