@@ -752,7 +752,7 @@ footer .footer-bottom .footBoxs .footLeft p {
   color: rgba(255, 255, 255, 0.4);
 }
 footer .footer-bottom .footBoxs .footLeft p .creator {
-  color: #2e21df;
+  color: #007bff;
 }
 footer .footer-bottom .footBoxs .footRight {
   display: flex;
@@ -1013,6 +1013,15 @@ footer .footer-bottom .footBoxs .footRight ul p {
   .popular .popular-content {
     padding: 10px;
   }
+  .tutor .tutor-title h2 {
+    font-size: 2.5rem;
+  }
+  .course .course-container .courseRight .course-title h2 {
+    font-size: 2.5rem;
+  }
+  .event {
+    padding-top: 50px;
+  }
   .event .event-title h2 {
     font-size: 2.5rem;
   }
@@ -1025,6 +1034,9 @@ footer .footer-bottom .footBoxs .footRight ul p {
   }
   .blog .blog-container .blogRight .blog-img .blog-overlay {
     top: 67%;
+  }
+  .blog .blog-container .blogRight .blog-img .blog-overlay h2 {
+    font-size: 2.5rem;
   }
   footer .footer-container {
     grid-template-columns: 1fr;
