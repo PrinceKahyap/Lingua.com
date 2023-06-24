@@ -243,6 +243,16 @@
 
 /* _________________/Hero-section____________________*/
 
+/* _________________Flag-section____________________*/
+.flag {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+
+}
+
+/* _________________/Flag-section____________________*/
+
 /* _________________popular-section____________________*/
 .popular {
     position: relative;
@@ -1077,6 +1087,7 @@ footer {
             height: 560px;
             bottom: 0;
         }
+
         .tutor-container {
             position: relative;
             padding-top: 50px;
@@ -1240,19 +1251,19 @@ footer {
         }
     }
 
-    .tutor{
-        .tutor-title{
-            h2{
+    .tutor {
+        .tutor-title {
+            h2 {
                 font-size: 2.5rem;
             }
         }
     }
 
-    .course{
-        .course-container{
-            .courseRight{
-                .course-title{
-                    h2{
+    .course {
+        .course-container {
+            .courseRight {
+                .course-title {
+                    h2 {
                         font-size: 2.5rem;
                     }
                 }
@@ -1262,6 +1273,7 @@ footer {
 
     .event {
         padding-top: 50px;
+
         .event-title {
             h2 {
                 font-size: 2.5rem;
@@ -1288,7 +1300,8 @@ footer {
                 .blog-img {
                     .blog-overlay {
                         top: 67%;
-                        h2{
+
+                        h2 {
                             font-size: 2.5rem;
                         }
                     }
@@ -1376,6 +1389,20 @@ footer {
                 }
             }
         }
+    }
+
+    .tutor .tutor-container {
+        padding: 0 10px;
+    }
+
+    .course .course-container {
+        padding: 0 10px;
+        .courseRight .course-time ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
     }
 
     footer {
