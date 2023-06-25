@@ -237,9 +237,21 @@ img {
 /* _________________/Hero-section____________________*/
 /* _________________Flag-section____________________*/
 .flag {
+  position: relative;
   width: 100%;
   height: auto;
-  padding: 50px 0;
+  padding-top: 50px;
+}
+.flag .owl-carousel {
+  position: relative;
+  padding: 10px 50px;
+}
+.flag .owl-carousel .card h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+  color: #252525;
 }
 
 /* _________________/Flag-section____________________*/
@@ -1345,7 +1357,8 @@ footer .footer-bottom .footBoxs .footRight ul p {
 /* -------------  /Responsive-style  --------------- */
 /* --------------- Map-style ------------------ */
 .map {
-  top: 200px;
+  position: relative;
+  margin-top: 140px;
 }
 .map iframe {
   width: 100%;
@@ -1390,6 +1403,7 @@ footer .footer-bottom .footBoxs .footRight ul p {
   color: rgba(0, 0, 0, 0.45);
 }
 .contact .contact-container .contactRight {
+  position: relative;
   margin-top: -200px;
 }
 .contact .contact-container .contactRight form {
@@ -1449,9 +1463,17 @@ footer .footer-bottom .footBoxs .footRight ul p {
     margin-top: 0;
   }
 }
+@media (max-width: 768px) {
+  .map {
+    margin-top: 80px;
+  }
+}
 @media (max-width: 568px) {
   .contact .contact-container {
     padding: 0 10px;
+  }
+  .contact .contact-container .contactRight form .contact-input {
+    flex-direction: column;
   }
 }
 /* --------------- /Responsive-style ------------------ *//*# sourceMappingURL=main.css.map */

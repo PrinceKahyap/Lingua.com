@@ -1,8 +1,7 @@
 /* --------------- Map-style ------------------ */ 
 .map{
-    // position: relative;
-    top: 200px;
-    // padding-bottom: 50px;
+    position: relative;
+    margin-top: 140px;
     iframe{
         width: 100%;
         height: 500px;
@@ -49,6 +48,7 @@
             }
         }
         .contactRight{
+            position: relative;
             margin-top: -200px;
             form{
                 padding: 40px;
@@ -113,10 +113,22 @@
         }
     }
 }
+@media(max-width: 768px){
+    .map{
+        margin-top: 80px;
+    }
+}
 @media(max-width: 568px){
     .contact{
         .contact-container{
             padding: 0 10px;
+            .contactRight{
+                form{
+                    .contact-input{
+                        flex-direction: column;
+                    }
+                }
+            }
         }
     }
 }
