@@ -128,6 +128,11 @@
 /* -------------  /OurBlo-style  --------------- */
 
 /* -------------  Responsive-style  --------------- */
+@media(max-width: 1024px){
+    .OurBlog-top .OurBlogbottom-container .OurBlog-img .Ourblog-overlay {
+        top: 60%;
+    }
+}
 @media(max-width: 992px) {
     .OurBlog-top {
         margin-top: 150px;
@@ -135,14 +140,19 @@
         .OureBlogtop-container {
             padding-bottom: 100px;
 
-            
+
             .Ourblog-box {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        
+
         .OurBlogbottom-container {
             grid-template-columns: repeat(1, 1fr);
+            .OurBlog-img{
+                .Ourblog-overlay{
+                    top: 78%;
+                }
+            }
         }
     }
 
@@ -150,29 +160,75 @@
 
 @media(max-width: 768px) {
     .OurBlog-top {
-        margin-top: 150px;
+        margin-top: 80px;
 
         .OureBlogtop-container {
             padding-bottom: 100px;
-
-            
-            .Ourblog-box {
-                grid-template-columns: repeat(2, 1fr);
+            h3{
+                font-size: 2.5rem;
+            }
+        }
+        .OurBlogbottom-container {
+            grid-template-columns: repeat(1, 1fr);
+            .OurBlog-img{
+                .Ourblog-overlay{
+                    top: 72%;
+                }
             }
         }
     }
 }
 
 @media(max-width: 568px) {
-    .OurBlog-top {
-        margin-top: 60px;
-
-        .OureBlogtop-container {
+    .OurBlog-top{
+        .OureBlogtop-container{
             padding: 0 10px;
+            padding-bottom: 50px;
+            .Ourblog-box{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        .OurBlogbottom-container{
+            padding: 0 10px;
+            .OurBlog-img{
+                .Ourblog-overlay{
+                    top: 65%;
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 415px) {
+    .OurBlog-top .OurBlogbottom-container .OurBlog-img .Ourblog-overlay {
+        padding: 15px 20px;
+        top: 68%;
+
+        h3 {
+            font-size: 1.2rem;
         }
 
+        h2 {
+            font-size: 2rem;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            padding-bottom: 10px;
+        }
     }
 
+}
+@media (max-width: 280px){
+    .OurBlog-top .OurBlogbottom-container .OurBlog-img .Ourblog-overlay {
+        padding: 15px 20px;
+        top: 56%;
+    }
 }
 
 /* -------------  /Responsive-style  --------------- */
