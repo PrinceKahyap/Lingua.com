@@ -1239,6 +1239,15 @@ footer {
         }
     }
 
+    .flag{
+        .flag-container{
+            padding: 0 10px;
+            .owl-carousel{
+                padding: 30px 10px;
+            }
+        }
+    }
+
     .popular {
         position: relative;
         width: 100%;

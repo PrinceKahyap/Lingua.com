@@ -1013,6 +1013,12 @@ footer .footer-bottom .footBoxs .footRight ul p {
   .hero .hero-container a {
     font-size: 1.2rem;
   }
+  .flag .flag-container {
+    padding: 0 10px;
+  }
+  .flag .flag-container .owl-carousel {
+    padding: 30px 10px;
+  }
   .popular {
     position: relative;
     width: 100%;
