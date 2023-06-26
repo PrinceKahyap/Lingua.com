@@ -34,6 +34,23 @@ img {
 }
 
 /* --------------- /Global-classes ----------------*/
+#preloader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 10000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+#preloader img {
+  width: 50px;
+  height: 50px;
+}
+
 /* _________________Header-section____________________*/
 .header {
   position: fixed;
@@ -1360,6 +1377,71 @@ footer .footer-bottom .footBoxs .footRight ul p {
   }
 }
 /* ------------/Responsive-style------------- */
+.town {
+  padding-top: 180px;
+}
+
+/* ---------------Teacher-style---------------*/
+.Teacher {
+  width: 100%;
+  height: auto;
+  padding: 80px 0;
+  background: #f8f8f8;
+}
+.Teacher h2 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Teacher .teacher-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding-top: 50px;
+}
+.Teacher .teacher-container .teacher-items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #fff;
+  padding: 40px 40px;
+}
+.Teacher .teacher-container .teacher-items .teacher-img {
+  width: 70px;
+  height: 70px;
+}
+.Teacher .teacher-container .teacher-items .teacher-img img {
+  border-radius: 50%;
+}
+.Teacher .teacher-container .teacher-items .teacher-info h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.Teacher .teacher-container .teacher-items .teacher-info p {
+  font-size: 1.4rem;
+  color: #a5a5a5;
+}
+
+/* ---------------/Teacher-style---------------*/
+/* ---------------Responsive-style---------------*/
+@media (max-width: 992px) {
+  .Teacher h2 {
+    font-size: 3rem;
+  }
+  .Teacher .teacher-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .Teacher h2 {
+    font-size: 2.5rem;
+  }
+  .Teacher .teacher-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* ---------------/Responsive-style---------------*/
 /* -------------  OurBlo-style  --------------- */
 .OurBlog-top {
   width: 100%;

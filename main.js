@@ -1,3 +1,8 @@
+const load = document.querySelector("#preloader");
+function myFunction(){
+    load.style.display = "none";
+};
+
 // Hamburger 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -24,4 +29,4 @@ $('.owl-carousel').owlCarousel({
             items: 9
         }
     }
-})
+});
