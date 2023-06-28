@@ -1619,6 +1619,9 @@ footer .footer-bottom .footBoxs .footRight ul p {
   }
 }
 @media (max-width: 568px) {
+  .OurBlog-top {
+    padding-top: 80px;
+  }
   .OurBlog-top .OureBlogtop-container {
     padding: 0 10px;
     padding-bottom: 50px;
