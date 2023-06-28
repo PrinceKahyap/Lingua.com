@@ -1062,6 +1062,9 @@ footer .footer-bottom .footBoxs .footRight ul p {
   .tutor .tutor-title h2 {
     font-size: 2.5rem;
   }
+  .course {
+    padding-top: 50px;
+  }
   .course .course-container .courseRight .course-title h2 {
     font-size: 2.5rem;
   }
@@ -1442,6 +1445,11 @@ footer .footer-bottom .footBoxs .footRight ul p {
   }
   .Teacher .teacher-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 568px) {
+  .town {
+    padding-top: 100px;
   }
 }
 /* ---------------/Responsive-style---------------*/
