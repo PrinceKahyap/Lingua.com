@@ -1,5 +1,5 @@
 const load = document.querySelector("#preloader");
-function myFunction(){
+function myFunction() {
     load.style.display = "none";
 };
 
@@ -12,8 +12,8 @@ hamburger.addEventListener("click", () => {
 });
 
 $('.owl-carousel').owlCarousel({
-    items:9,
-    loop:true,
+    items: 9,
+    loop: true,
     margin: 50,
     nav: false,
     autoplay: true,
